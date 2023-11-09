@@ -43,7 +43,8 @@
 	</nav>
 
 	<!-- Page Header -->
-	<header class="masthead" id="header-bg-img" style="background-image: url(static/img/thorin.png)">
+	<header class="masthead"
+		style="background-image: url('https://pre00.deviantart.net/9ae0/th/pre/f/2013/275/8/f/the_hobbit__thorin_and_company_by_art_calavera-d5nay7b.png')">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -98,8 +99,7 @@
 							</a>
 						</li>
 					</ul>
-					<p class="copyright text-muted">Copyright &#9426; Thorin & Co Website <span id="copyright"></span>
-					</p>
+					<p class="copyright text-muted">Copyright &copy; Your Website <span id="copyright"></span></p>
 				</div>
 			</div>
 		</div>
@@ -113,9 +113,7 @@
 	<script src="{{ url_for('static', filename='js/clean-blog.min.js') }}"></script>
 
 	<script>
-		$("#copyright")
-			.text(new Date().getFullYear())
-			.css("color", "gray");
+		$("#copyright").text(new Date().getFullYear());
 	</script>
 
 </body>
